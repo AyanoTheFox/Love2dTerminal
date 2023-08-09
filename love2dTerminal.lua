@@ -77,7 +77,7 @@ function Terminal:new(_x, _y, _w, _h, _bg, _fg, _userName, _keyOpen, _font, _err
             func = function() _terminal.meta.terminal = {} end 
         };
         {
-            name = 'terminal-autodestroy';
+            name = 'terminal-authdestroy';
             description = 'destroy the terminal';
             func = function() _terminal:destroy() end
         };
