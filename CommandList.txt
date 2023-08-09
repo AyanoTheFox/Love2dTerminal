@@ -1,0 +1,28 @@
+commands:
+clear* clean the screen.
+--------------------------------------------------
+terminal-new* create a terminal.
+--------------------------------------------------
+terminal-new-command* registry commands.
+params:
+--1& command name (string).
+--2 **opitional**& command description (string).
+--------------------------------------------------
+terminal-autodestroy* destroy the terminal.
+--------------------------------------------------
+terminal-settings* terminal width, height, username, color etc.
+--------------------------------------------------
+params:
+--1& setting: userName, size, color
+@if color:
+--2& red (number)
+--3& green (number)
+--4& blue (number)
+--4 **opitional**& alph(number)
+##################################################
+@if size
+--2& width (number)
+--3& height (number)
+##################################################
+@if userName
+--2& userName (string)
