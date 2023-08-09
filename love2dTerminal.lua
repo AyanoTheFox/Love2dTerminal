@@ -74,7 +74,11 @@ function Terminal:new(_x, _y, _w, _h, _bg, _fg, _userName, _keyOpen, _font, _err
         {
             name = 'clear';
             description = 'clean the terminal';
-            func = function() _terminal.meta.terminal = {} end 
+            func = function()
+                _terminal.meta.terminal = {}
+                _terminal.textY = _terminal.y + 36
+                _terminal.textOffsetY = 0
+            end 
         };
         {
             name = 'terminal-authdestroy';
