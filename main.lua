@@ -1,6 +1,6 @@
 function love.load(argc, argv)
 --#libaries--
-    terminal = require 'love2dterminal'
+    terminal = require 'love2dTerminal'
     
 --#cmds--
     test1 = terminal:new(0, 0, nil, nil, {0; 112 / 255; 154 / 255; 1}, nil, 'foxy')
